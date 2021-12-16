@@ -39,7 +39,8 @@
    document.getElementById("icontext").value = ""; 
 </script>
     <script type="text/javascript" src="../plugin/ckeditor/ckeditor.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/world-merc.js"></script>
     <script type="text/javascript" src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" ></script>
 
 <script>
@@ -47,8 +48,6 @@ $(document).ready( function () {
     $('.datatable').DataTable();
 } );
 </script>
-
-
-
   </body>
 </html>
+
