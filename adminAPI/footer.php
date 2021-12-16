@@ -28,7 +28,6 @@
       <!-- ========== footer end =========== -->
     </main>
     <!-- ======== main-wrapper end =========== -->
-
     <!-- ========= All Javascript files linkup ======== -->
     <script src="../plugin/fontawesome/fontawesome-browser.js"></script>
 <script>
@@ -40,13 +39,6 @@
    document.getElementById("icontext").value = ""; 
 </script>
     <script type="text/javascript" src="../plugin/ckeditor/ckeditor.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
-    <script src="assets/js/dynamic-pie-chart.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/fullcalendar.js"></script>
-    <script src="assets/js/world-merc.js"></script>
-    <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" ></script>
 
