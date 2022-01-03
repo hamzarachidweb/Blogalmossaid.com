@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 16 déc. 2021 à 13:16
+-- Généré le : lun. 03 jan. 2022 à 21:27
 -- Version du serveur : 10.4.20-MariaDB
 -- Version de PHP : 7.4.22
 
@@ -133,16 +133,15 @@ CREATE TABLE `pagecategory` (
   `page1_category` varchar(255) NOT NULL,
   `page2_category` varchar(255) NOT NULL,
   `page3_category` varchar(200) NOT NULL,
-  `page4_category` varchar(255) NOT NULL,
-  `date_category` date NOT NULL DEFAULT current_timestamp()
+  `page4_category` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `pagecategory`
 --
 
-INSERT INTO `pagecategory` (`ads_category`, `page_category`, `page1_category`, `page2_category`, `page3_category`, `page4_category`, `date_category`) VALUES
-(' <img class=\"img-fluid\" src=\"https://scontent.frak2-2.fna.fbcdn.net/v/t1.6435-9/48387800_1775184662591767_2189115672238227456_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HDSuADmQH9gAX9owuOV&_nc_ht=scontent.frak2-2.fna&oh=00_AT-NX6TkdNK9eRSCKXLk_IPG2yYAAyPwGquCgfozqR1u6g&oe=61DCC0A7\" alt=\"Almmosaid.com\"> ', '7', '1', '', '', '', '2021-12-06');
+INSERT INTO `pagecategory` (`ads_category`, `page_category`, `page1_category`, `page2_category`, `page3_category`, `page4_category`) VALUES
+(' <img class=\"img-fluid\" src=\"https://scontent.frak2-2.fna.fbcdn.net/v/t1.6435-9/48387800_1775184662591767_2189115672238227456_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HDSuADmQH9gAX9owuOV&_nc_ht=scontent.frak2-2.fna&oh=00_AT-NX6TkdNK9eRSCKXLk_IPG2yYAAyPwGquCgfozqR1u6g&oe=61DCC0A7\" alt=\"Almmosaid.com\"> ', '7', '1', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -159,7 +158,6 @@ CREATE TABLE `pagepost` (
   `page5_post` varchar(200) NOT NULL,
   `page6_post` varchar(200) NOT NULL,
   `page7_post` varchar(200) NOT NULL,
-  `date_post` date NOT NULL DEFAULT current_timestamp(),
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -167,8 +165,8 @@ CREATE TABLE `pagepost` (
 -- Déchargement des données de la table `pagepost`
 --
 
-INSERT INTO `pagepost` (`ads_post`, `page_post`, `page1_post`, `page2_post`, `page3_post`, `page5_post`, `page6_post`, `page7_post`, `date_post`, `id`) VALUES
-(' <img class=\"img-fluid\" src=\"https://scontent.frak2-2.fna.fbcdn.net/v/t1.6435-9/48387800_1775184662591767_2189115672238227456_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HDSuADmQH9gAX9owuOV&_nc_ht=scontent.frak2-2.fna&oh=00_AT-NX6TkdNK9eRSCKXLk_IPG2yYAAyPwGquCgfozqR1u6g&oe=61DCC0A7\" alt=\"Almmosaid.com\"> ', '7', '6', '1', '', '', '', '', '2021-12-06', 1);
+INSERT INTO `pagepost` (`ads_post`, `page_post`, `page1_post`, `page2_post`, `page3_post`, `page5_post`, `page6_post`, `page7_post`, `id`) VALUES
+(' <img class=\"img-fluid\" src=\"https://scontent.frak2-2.fna.fbcdn.net/v/t1.6435-9/48387800_1775184662591767_2189115672238227456_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=HDSuADmQH9gAX9owuOV&_nc_ht=scontent.frak2-2.fna&oh=00_AT-NX6TkdNK9eRSCKXLk_IPG2yYAAyPwGquCgfozqR1u6g&oe=61DCC0A7\" alt=\"Almmosaid.com\"> ', '7', '6', '1', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -230,18 +228,6 @@ INSERT INTO `settingspage` (`id`, `ads`, `page`, `page1`, `page2`, `page3`, `pag
 -- --------------------------------------------------------
 
 --
--- Structure de la table `upload`
---
-
-CREATE TABLE `upload` (
-  `id` int(11) NOT NULL,
-  `upload` varchar(222) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `users`
 --
 
@@ -298,12 +284,6 @@ ALTER TABLE `settingspage`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `upload`
---
-ALTER TABLE `upload`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -342,12 +322,6 @@ ALTER TABLE `pagepost`
 --
 ALTER TABLE `settingspage`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT pour la table `upload`
---
-ALTER TABLE `upload`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `users`
