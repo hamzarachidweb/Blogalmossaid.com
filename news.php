@@ -33,21 +33,6 @@
            <h3><?=$news['name'];?></h3>
            <br>
            <span class="text-end note-content" ><?=$news['content'];?></span>
-           <div class="row">
-            <div class="col-md-12">
-              <div class="card-header">
-                <h3> مشاركة  </h3>
-                <div class="card">
-                <div class="card-body">
-
- <!-- Go to www.addthis.com/dashboard to customize your tools --> 
- <div class="addthis_inline_share_toolbox"></div> 
-
-                </div>
-                </div>
-              </div>
-            </div>
-           </div>
         </div>
       </div>
     </div>
